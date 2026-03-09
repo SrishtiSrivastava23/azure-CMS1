@@ -1,12 +1,14 @@
-# Write-up Template
+ Azure Virtual Machine (VM)
+Costs: Higher for small apps.
+Scalability: Manual scaling; more effort to handle traffic spikes.
+Availability: Depends on VM setup; you must configure backups and redundancy.
+Workflow: Requires manual setup of OS, Python, web server, and deployments.
 
-### Analyze, choose, and justify the appropriate resource option for deploying the app.
+Azure App Service
+Costs: cheaper for small apps.
+Scalability: Built-in auto-scaling options.
+Availability: Managed by Azure with built-in patching and high availability.
+Workflow: Easy deployment via GitHub Actions, minimal maintenance.
 
-*For **both** a VM or App Service solution for the CMS app:*
-- *Analyze costs, scalability, availability, and workflow*
-- *Choose the appropriate solution (VM or App Service) for deploying the app*
-- *Justify your choice*
-
-### Assess app changes that would change your decision.
-
-*Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
+Chosen Solution: Azure App Service
+Justification: Provides a fully managed environment, simplifies deployment, and scales automatically. Ideal for a learning project like FlaskWebProject, reducing overhead while ensuring reliability and availability.
